@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ofbiz-component name="demo-data"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-component.xsd">
+		
+    <!-- define resource loaders; most common is to use the component resource loader -->
+    <resource-loader name="main" type="component"/> 
+	
+	<entity-resource type="data" reader-name="demo" loader="main" location="data/entity/TenantDemoData.xml"/>
+	
+	<!-- NOTE: comment this line out to ensure no resetting of passwords -->
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/security/PasswordSecurityData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/security/SecurityGroupDemoData.xml"/>
+	
+	<entity-resource type="data" reader-name="demo" loader="main" location="data/common/CommonSecurityGroupDemoData.xml"/>
+	
+	<entity-resource type="data" reader-name="demo" loader="main" location="data/service/ServiceSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/service/ServiceDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/entityext/EntityExtSecurityGroupDemoData.xml"/>
+	
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/bi/BiSecurityGroupDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/webtools/WebtoolsSecurityGroupDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/party/PartySecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/party/PartyDemoData.xml"/>
+	
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/securityext/UserDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/ContentSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/UsersDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/DemoBlogPubPtData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/DemoBlogUsersData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/DemoBlogEntryData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/WebSitePublishPointData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/CompDocData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/content/ForumDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/workeffort/WorkEffortSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/workeffort/WorkEffortDemoData.xml"/>
+	
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/product/ProductSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/product/FacilitySecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/product/ProductDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/manufacturing/ManufacturingSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/manufacturing/ManufacturingExampleData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/AccountingSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoGeneralChartOfAccounts.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoOrganizationData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoGlSetupData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoFinAccountData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoTaxAuthority.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoAcctgTransactionData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoPaymentsInvoices.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoAccountingUserData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/accounting/DemoAssetMaintData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/humanres/HumanResSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/humanres/HumanResDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/order/OrderSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/order/OrderDemoUser.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/order/OrderDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/marketing/MarketingSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/marketing/sfaDemoData.xml"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/commonext/CommonExtSecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/commonext/OfbizSetupSecurityGroupDemoData.xml"/>
+    
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoProduct.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoSurvey.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoRentalShipping.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoShipping.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoWebSitePublishPointData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoTemplateData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoContent.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoTopic.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoTree.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoFactoids.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoRelatedData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoConfigurator.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoRentalProduct.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoProductImages.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoTaxAuthority.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoOrderPeopleData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoOrderTestData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoMarketing.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoPurchasing.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoStandardCosting.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoStoreGiftCertificateSettings.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoFinAccount.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoProductI18nData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoProductCategoriesI18nData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoTreeContent.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoTestSurveyData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoProductAdditionalViewData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoPopularCategoriesData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoContentAltUrl.xml"/>
+    
+</ofbiz-component>

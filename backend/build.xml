@@ -1,0 +1,9 @@
+<project name="O3 ERP Demo Build" default="build" basedir="../../o3erp/backend"
+         xmlns:ivy="antlib:org.apache.ivy.ant"
+         xmlns:sonar="antlib:org.sonar.ant:sonar">
+
+	<property name="ext.dir" value="o3erp-demo/backend"/>
+    <import file="${basedir}/build.xml"/>
+
+
+</project>
