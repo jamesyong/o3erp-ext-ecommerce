@@ -2,7 +2,7 @@
          xmlns:ivy="antlib:org.apache.ivy.ant"
          xmlns:sonar="antlib:org.sonar.ant:sonar">
 
-	<property name="ext.dir" value="o3erp-demo/backend"/>
+	<property name="ext.dir" value="o3erp-ext-ecommerce/backend"/>
     <import file="${basedir}/build.xml"/>
 
 

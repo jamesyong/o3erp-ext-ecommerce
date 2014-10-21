@@ -1,7 +1,7 @@
 package main
 
 import (
-	frontend "o3erp/frontend"
+	frontend "github.com/jamesyong/o3erp/frontend"
 )
 
 func main() {
