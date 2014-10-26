@@ -7,8 +7,6 @@
     <!-- define resource loaders; most common is to use the component resource loader -->
     <resource-loader name="main" type="component"/> 
     
-    <classpath type="dir" location="config"/>
-	
 	<entity-resource type="data" reader-name="demo" loader="main" location="data/entity/TenantDemoData.xml"/>
 	
 	<!-- NOTE: comment this line out to ensure no resetting of passwords -->
