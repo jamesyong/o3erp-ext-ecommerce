@@ -101,5 +101,12 @@
     <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoProductAdditionalViewData.xml"/>
     <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoPopularCategoriesData.xml"/>
     <entity-resource type="data" reader-name="demo" loader="main" location="data/ecommerce/DemoContentAltUrl.xml"/>
+
+    <webapp name="pictures"
+        title="Pictures"
+        server="default-server"
+        location="webapp/pictures"
+        mount-point="/pictures"
+        app-bar-display="false"/>
     
 </ofbiz-component>
