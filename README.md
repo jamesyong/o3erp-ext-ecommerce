@@ -137,6 +137,14 @@ at
 		...
     </datasource>
 ```
+Extend/Override Properties
+==========================
+Properties files located in config and i18n folders under
+$GOPATH/src/github.com/jamesyong/o3erp/backend/ can be overrided and/or extended.
+
+See the following files for examples:
+$GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/backend/hot-deploy/demo-data/config/ext.general.properties
+$GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/backend/hot-deploy/demo-data/i18n/ext.AccountingUiLabels.properties
 
 
 
