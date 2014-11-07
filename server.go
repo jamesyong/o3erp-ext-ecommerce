@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	frontend "github.com/jamesyong/o3erp/frontend"
-	"github.com/jamesyong/o3erp/frontend/config"
+	"github.com/jamesyong/o3erp/go/config"
+	frontend "github.com/jamesyong/o3erp/go/server"
 	"os"
 )
 
@@ -14,8 +14,8 @@ func init() {
 		os.Exit(1)
 	}
 	config.WORKING_DIRECTORY = pwd
-	config.PATH_BASE_FRONTEND_TEMPLATES = pwd + "/../o3erp/frontend/templates"
-	config.PATH_BASE_FRONTEND_ASSETS = pwd + "/../o3erp/frontend/assets"
+	config.PATH_BASE_GOLANG_TEMPLATES = pwd + "/../o3erp/go/templates"
+	config.PATH_BASE_GOLANG_ASSETS = pwd + "/../o3erp/go/assets"
 }
 
 func main() {
