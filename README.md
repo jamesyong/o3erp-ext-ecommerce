@@ -15,12 +15,12 @@ Open a terminal and type<br>
 	go get github.com/jamesyong/o3erp-ext-ecommerce
 ```
 
-Go to $GOPATH/src/github.com/jamesyong/o3erp/backend/framework/base/ofbiz-component.xml, and
+Go to $GOPATH/src/github.com/jamesyong/o3erp/java/framework/base/ofbiz-component.xml, and
 update path-to-key-store to correct path value.
 
 In the terminal, type
 ```
-	cd $GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/backend
+	cd $GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/java
 	ant load-demo
 ```
 
@@ -32,12 +32,6 @@ At this point, you can run the unit tests with
 To start the backend, type
 ```
 	ant start
-```
-
-Open another terminal and type
-```
-    cd $GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce
-	go run server.go
 ```
 
 To access the ecommerce store:
@@ -54,7 +48,7 @@ From the terminal, type
 ```
     cd $GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce
     ant download-PG-JDBC
-    cd backend/hot-deploy/entity-data/config
+    cd java/hot-deploy/entity-data/config
     sudo nano -w entityengine.xml
 ```
 Look for 
@@ -140,11 +134,11 @@ at
 Extend/Override Properties
 ==========================
 Properties files located in config and i18n folders under
-$GOPATH/src/github.com/jamesyong/o3erp/backend/ can be overrided and/or extended.
+$GOPATH/src/github.com/jamesyong/o3erp/java/ can be overrided and/or extended.
 
 See the following files for examples:
-$GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/backend/hot-deploy/demo-data/config/ext.general.properties
-$GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/backend/hot-deploy/demo-data/i18n/ext.AccountingUiLabels.properties
+$GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/java/hot-deploy/demo-data/config/ext.general.properties
+$GOPATH/src/github.com/jamesyong/o3erp-ext-ecommerce/java/hot-deploy/demo-data/i18n/ext.AccountingUiLabels.properties
 
 
 
