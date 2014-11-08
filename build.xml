@@ -1,4 +1,4 @@
-<project name="O3 ERP Demo Build" default="build" basedir="../../o3erp/java"
+<project name="O3 ERP Demo Build" default="build" basedir="../o3erp/java"
          xmlns:ivy="antlib:org.apache.ivy.ant"
          xmlns:sonar="antlib:org.sonar.ant:sonar">
 
