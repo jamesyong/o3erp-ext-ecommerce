@@ -14,8 +14,9 @@ func init() {
 		os.Exit(1)
 	}
 	config.WORKING_DIRECTORY = pwd
-	config.PATH_BASE_GOLANG_TEMPLATES = pwd + "/../o3erp/go/templates"
-	config.PATH_BASE_GOLANG_ASSETS = pwd + "/../o3erp/go/assets"
+	config.PATH_BASE_GOLANG_TEMPLATES = pwd + "/../go/templates"
+	config.PATH_BASE_GOLANG_ASSETS = pwd + "/../go/assets"
+	config.PATH_BASE_GOLANG_CERT = pwd + "/../../" + os.Getenv("ext.dir") + "/../go"
 }
 
 func main() {

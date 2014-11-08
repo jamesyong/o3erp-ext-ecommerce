@@ -5,5 +5,11 @@
 	<property name="ext.dir" value="o3erp-ext-ecommerce/java"/>
     <import file="${basedir}/build.xml"/>
 
-
+    <target name="startGo">
+	<exec executable="go">
+            <env key="ext.dir" value="${ext.dir}"/>
+            <arg value="run"/>
+            <arg value="../../${ext.dir}/../server.go"/>
+        </exec>
+    </target>
 </project>
