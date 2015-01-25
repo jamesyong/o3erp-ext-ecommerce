@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/jamesyong/o3erp/go/config"
 	frontend "github.com/jamesyong/o3erp/go/server"
+	"github.com/jamesyong/o3erp/go/templating"
 	"os"
 )
 
@@ -20,5 +21,6 @@ func init() {
 }
 
 func main() {
+	templating.Options.IsDevelopment = true
 	frontend.Startup()
 }
